@@ -424,7 +424,10 @@
             "id":{
                "type":"number",
                "format":"double"
-            }
+           },
+           "name":{
+               "type":"string"
+           }
          },
          "additionalProperties":false
       }
