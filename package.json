@@ -3,16 +3,36 @@
   "version": "0.1.1",
   "description": "A gulp module to validate loopback code against swagger spec",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "mocha"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/yantrashala/gulp-loopback-swagger-validator"
   },
   "dependencies": {
+    "deep-diff": "^0.3.3",
+    "gulp-util": "^3.0.7",
+    "js-yaml": "^3.5.2",
     "loopback-swagger": "^2.2.3",
-    "deep-diff" : "^0.3.3",
-    "gulp-util":"^3.0.7",
-    "js-yaml" : "^3.5.2"
+    "mocha": "^2.5.3",
+    "semver": "^5.1.0",
+    "supports-color": "^3.1.2",
+    "through2": "^2.0.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "gulp": "^3.9.1",
+    "gulp-swagger": "0.0.10",
+    "jshint": "^2.9.2",
+    "jshint-stylish": "^2.2.0",
+    "compression": "^1.0.3",
+    "cors": "^2.5.2",
+    "loopback": "^2.22.0",
+    "loopback-boot": "^2.6.5",
+    "loopback-component-explorer": "^2.1.0",
+    "loopback-datasource-juggler": "^2.39.0",
+    "serve-favicon": "^2.0.1"
   }
 }

@@ -1,19 +1,13 @@
 # gulp-loopback-swagger-validator
 --------------------------
 
-| | |
-| ----------- | ------------ |
-| Package   | gulp-loopback-swagger-validator |
-| Description | [Gulp][gulp] plugin that parses [Swagger][swagger] specifications in  YAML format, validates against the official [Swagger 2.0 schema][swagger2spec], and compares against loopback application
+[![NPM](https://nodei.co/npm/gulp-loopback-swagger-validator.png?downloads=true)](https://nodei.co/npm/gulp-loopback-swagger-validator/)
 
+ [![NPM](https://nodei.co/npm-dl/gulp-loopback-swagger-validator.png?months=3&height=3)](https://nodei.co/npm/gulp-loopback-swagger-validator/)
 
-Install
---------------------------
+ [![Build status](https://img.shields.io/travis/yantrashala/gulp-loopback-swagger-validator/master.svg?style=flat-square)](https://travis-ci.org/yantrashala/gulp-loopback-swagger-validator)
 
-```js
-npm install gulp-loopback-swagger-validator
-```
-
+[Gulp][gulp] plugin that parses [Swagger][swagger] specifications in YAML format, validates against the official [Swagger 2.0 schema][swagger2spec], and compares against loopback application
 
 Usage
 --------------------------
@@ -52,10 +46,10 @@ Pre-requisite changes in [Loopback][loopback] configuration:
 
 ```js
 var gulp = require('gulp');
-var swaggerValidator = require('gulp-loopback-swagger-validator');
+var loopbackValidator = require('gulp-loopback-swagger-validator');
 
 gulp.task('swagger-validate', function() {
-  swaggerValidator.exec({
+  loopbackValidator.exec({
             src: "./spec/swagger.yaml",
             app: require('./server/server')
           });
