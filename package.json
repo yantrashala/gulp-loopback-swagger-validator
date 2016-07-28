@@ -20,7 +20,8 @@
     "mocha": "^2.5.3",
     "semver": "^5.1.0",
     "supports-color": "^3.1.2",
-    "through2": "^2.0.1"
+    "through2": "^2.0.1",
+    "codecov.io": "^0.1.6"
   },
   "devDependencies": {
     "chai": "^3.5.0",
