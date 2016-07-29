@@ -12,6 +12,10 @@
     "type": "git",
     "url": "https://github.com/yantrashala/gulp-loopback-swagger-validator"
   },
+  "contributors": [
+    "pbhadauria2000",
+    "mennu"
+  ],
   "dependencies": {
     "deep-diff": "^0.3.3",
     "gulp-util": "^3.0.7",

@@ -5,7 +5,7 @@
 
  [![NPM](https://nodei.co/npm-dl/gulp-loopback-swagger-validator.png?months=3&height=3)](https://nodei.co/npm/gulp-loopback-swagger-validator/)
 
- [![Build status](https://img.shields.io/travis/yantrashala/gulp-loopback-swagger-validator/master.svg?style=flat-square)](https://travis-ci.org/yantrashala/gulp-loopback-swagger-validator)
+  [![Build status](https://img.shields.io/travis/yantrashala/gulp-loopback-swagger-validator/master.svg?style=flat-square)](https://travis-ci.org/yantrashala/gulp-loopback-swagger-validator) [![codecov](https://codecov.io/gh/yantrashala/gulp-loopback-swagger-validator/branch/master/graph/badge.svg)](https://codecov.io/gh/yantrashala/gulp-loopback-swagger-validator)
 
 [Gulp][gulp] plugin that parses [Swagger][swagger] specifications in YAML format, validates against the official [Swagger 2.0 schema][swagger2spec], and compares against loopback application
 
@@ -58,11 +58,22 @@ gulp.task('swagger-validate', function() {
 gulp.task('default', ['swagger-validate']);
 ```
 
-Roadmap
---------------------------
-- Pretty print differences
-- Allow multiple spec files / Allow includes
-- Test coverage
+4. Preview in the console
+
+|------------------------------------------------------------------------------|
+|                    Swagger specification comparison report                   |
+|------------------------------------------------------------------------------|
+|                 Area                 |        JSON       |      Loopback     |
+|------------------------------------------------------------------------------|
+| Swagger Version                      |         OK        |         OK        |
+| Base Path                            |         OK        |         OK        |
+| Definitions                          |                   |                   |
+|  - Pet,properties,name,type          |         OK        |         OK        |
+|  - Pet,properties,name,format        |         OK        |         OK        |
+| Paths                                |         OK        |         OK        |
+|------------------------------------------------------------------------------|
+
+
 
 See Also
 --------------------------
