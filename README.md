@@ -60,19 +60,7 @@ gulp.task('default', ['swagger-validate']);
 
 4. Preview in the console
 
-|------------------------------------------------------------------------------|
-|                    Swagger specification comparison report                   |
-|------------------------------------------------------------------------------|
-|                 Area                 |        JSON       |      Loopback     |
-|------------------------------------------------------------------------------|
-| Swagger Version                      |         OK        |         OK        |
-| Base Path                            |         OK        |         OK        |
-| Definitions                          |                   |                   |
-|  - Pet,properties,name,type          |         OK        |         OK        |
-|  - Pet,properties,name,format        |         OK        |         OK        |
-| Paths                                |         OK        |         OK        |
-|------------------------------------------------------------------------------|
-
+![Preview](https://github.com/yantrashala/gulp-loopback-swagger-validator/blob/master/preview.PNG)
 
 
 See Also
