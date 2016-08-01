@@ -45,22 +45,29 @@ Pre-requisite changes in [Loopback][loopback] configuration:
 4. Add gulpfile task
 
 ```js
+
 var gulp = require('gulp');
-var loopbackValidator = require('gulp-loopback-swagger-validator');
+var lbValidator = require('gulp-loopback-swagger-validator');
+var swagger = require('gulp-swagger');
+var path     = require('path');
 
 gulp.task('swagger-validate', function() {
-  loopbackValidator.exec({
-            src: "./spec/swagger.yaml",
-            app: require('./server/server')
-          });
+  gulp.src('./json/*.json')
+  .pipe(swagger('schema.json'))
+  .pipe(lbValidator({'appPath':path.resolve('./project/server/server')}))
+  .on('error',function(e){
+      console.log(e.message);
+  });
 });
+
+
 
 gulp.task('default', ['swagger-validate']);
 ```
 
 4. Preview in the console
 
-![Preview](https://github.com/yantrashala/gulp-loopback-swagger-validator/blob/master/preview.PNG)
+![Preview](https://raw.githubusercontent.com/yantrashala/gulp-loopback-swagger-validator/master/preview.PNG)
 
 
 See Also

@@ -24,7 +24,6 @@ module.exports = function (options) {
     try {
         var app = require(options.appPath);
     } catch (e) {
-        console.log(e);
         throw new gutil.PluginError(NAME, 'Error occured while loading loopback application');
     }
 
@@ -51,7 +50,6 @@ module.exports = function (options) {
             }
 
         } catch (e) {
-            console.log(e);
             throw new gutil.PluginError(NAME, 'Unable to load input YAMLs');
         }
 
@@ -68,8 +66,6 @@ module.exports = function (options) {
         var basePathDiff = diff(spec.basePath,loopbackSpec.basePath);
         var definitionsDiff = diff(spec.definitions,loopbackSpec.definitions);
         var pathDiff = diff(spec.paths,loopbackSpec.paths);
-
-        console.log(JSON.stringify(pathDiff));
 
         var reportWidth = 80;
 
