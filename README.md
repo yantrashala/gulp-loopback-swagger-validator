@@ -29,9 +29,9 @@ Pre-requisite changes in [Loopback][loopback] configuration:
   ```
 
 3. Make changes to config.json
-    At the end of config.json file add the follow configuration:
 
    ```js
+   At the end of config.json file add the follow configuration:
    {
          "apiInfo": {
            "title": Title of the your API application as written in YAML
